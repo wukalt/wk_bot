@@ -51,8 +51,8 @@ def get_file_link(file_id):
     return f"https://api.telegram.org/file/bot{TELEGRAM_TOKEN}/{path}"
 
 # === My Functions ===
-def clear_history():
-    chat_memory.clear()
+def clear_history(chat_id):
+    chat_memory[chat_id].clear()
     return "memory is cleared -> empty now"
 
 def download_instagram_post_with_cookies(url):
@@ -288,7 +288,7 @@ def handle_text(chat_id, text):
 
     elif text == "/clear":
         send_text(chat_id, "حافظه پاک شد.")
-        clear_history()
+        clear_history(chat_id)
       
     elif sessions.get(chat_id) == "image":
         sessions.pop(chat_id)
