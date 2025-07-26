@@ -1,22 +1,52 @@
-# TELEGRAM BOT
+# Telegram wK_bot
 
-this is a assistant using chat-gpt API hugging-face APIs and bunch of other ...
+a chatBot assist with **chatGPT**, **HuggingFace** and **Telegram API**
+
+# Table Of Content
+1. [BOT FEATURES](#features)  
+2. [TODO LIST](#todo)  
+3. [HOW TO USE](#usage)  
+4. [HOW TO CONTRIBUTE](#todo)  
+
+## FEATURES
+1. **ChatBot** (with **voice mode**)
+2. **Extract Text** From Voice
+3. **Generate Image** (with prompt)
+4. **Youtube Downloader**
+5. **Pinterest Downloader**
+6. Instagram Downloader (beta)
+
+## TODO
+1. **Add:** Edit Image with Prompt 
 
 ## USAGE
 
-1. clone -> 
+1. Fork project into your Github Account
 
-    ```bash
-    git clone https://github.com/wukalt/wk_bot.git
-    ```
+2. Add your site cookies (youtube, instagram)
 
-2. import your cookie and other stuff (read the code for more info)
+3. Install requrements : 
+```bash
+pip install -r requirements.txt
+```
 
-3. if you want to lunch it create a <a href="https://render.com">render.com</a> account .
+4. Go to [render.com](https://render.com)
 
-4. create python3 project
+5. Register, Login and **Create python3 project**
 
-5. import wk_assist files
-6. create a bot in @botFather in telegram
-7. set telegram webhook
-8. enjoy
+6. Connect **`render.com`** app to **`Github`** repository
+
+7. Create `HuggingFace API`, `OPEN_AI API` and add them into **render Dasboard**
+
+8. Create a bot in `@botFather` in telegram
+
+9. Set telegram webhook (like this) :
+```bash
+curl -X POST https://api.telegram.org/bot{YOUR_BOT_TOKEN}/setWebhook?url={YOUR_RENDER_APP_LINK}
+```
+10. Customize Bot Menu and Enjoy.
+
+## CONTRIBUTE
+1. **Fork** The Project
+2. Make the Changes (**Your own idea** and **features** or from **[todo](#todo) List** )
+3. **Push**
