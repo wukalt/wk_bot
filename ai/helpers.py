@@ -12,7 +12,9 @@ def ask_gpt_with_memory(chat_id, user_text):
         "Authorization": f"Bearer {OPENAI_API_KEY}",
         "Content-Type": "application/json"
     }, json={
-        "model": "gpt-4o-mini",
+        "model": "gpt-5",
+        "verbosity": "low",
+        "reasoning_effort": "minimal",
         "messages": messages
     }).json()
     reply = res.get("choices", [{}])[0].get("message", {}).get("content", "پاسخی دریافت نشد.")
@@ -25,7 +27,7 @@ def translate_fa_to_en(text):
         "Authorization": f"Bearer {OPENAI_API_KEY}",
         "Content-Type": "application/json"
     }, json={
-        "model": "gpt-4o-mini",
+        "model": "gpt-5",
         "messages": [
             {"role": "system", "content": "You are a helpful assistant that translates Persian to English."},
             {"role": "user", "content": f"Translate this to English: {text}"}
