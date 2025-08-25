@@ -5,8 +5,6 @@ from utils.telegram_utils import send_text
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
-=======
 # === Config ===
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 HF_API_KEY = os.getenv("HF_API_KEY")
