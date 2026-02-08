@@ -1,6 +1,6 @@
 # Telegram wK_bot
 
-a chatBot assist with **chatGPT**, **HuggingFace** and **Telegram API**
+a chatBot assist with **chatGPT API**, **Hugging Face** and **Telegram API**
 
 # Table Of Content
 1. [BOT FEATURES](#features)  
@@ -25,7 +25,7 @@ a chatBot assist with **chatGPT**, **HuggingFace** and **Telegram API**
 
 2. Add your site cookies (youtube, instagram)
 
-3. Install requrements : 
+3. Install requirements : 
 ```bash
 pip install -r requirements.txt
 ```
